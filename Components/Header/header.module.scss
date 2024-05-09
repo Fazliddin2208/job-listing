@@ -1,0 +1,23 @@
+.wrapper{
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+}
+.header{
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    &__menus{
+        border: 1px solid red;
+        display: flex;
+        justify-content: space-between;
+
+        ul{
+            list-style: none;
+        }
+        
+        &__links{
+            display: flex;
+        }
+    }
+}
