@@ -8,58 +8,49 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import USFlag from "@/public/images/usaflag.svg";
+import { usePathname } from "next/navigation";
+import links from "@/datas/links.json";
 
 export default function Header() {
+  const pathname = usePathname();
+
   return (
     <div className={style.wrapper}>
-      <div className={`container ${style.header}`}>
+      <div className={style.header}>
         <div className={style.header__menus}>
-          <ul className={style.header__menus__links}>
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-            <li>
-              <Link href="/search">Find job</Link>
-            </li>
-            <li>
-              <Link href="/employers">Employers</Link>
-            </li>
-            <li>
-              <Link href="/cadidates">Candidates</Link>
-            </li>
-            <li>
-              <Link href="/pricing">Pricing plans</Link>
-            </li>
-            <li>
-              <Link href="/support">Customer supports</Link>
-            </li>
-          </ul>
-          <div className={style.header__menus__info}>
-            <a href="tel:+12025550178">
-              <FontAwesomeIcon icon={faPhoneVolume} />
-              +1-202-555-0178
-            </a>
-            <div className={style.header__menus__langs}>
-              <p>
-                <Image src={USFlag} width={20} height={20} alt="us" />
-                English <FontAwesomeIcon icon={faChevronDown} />
-              </p>
-              <ul>
-                <li>
-                  <Image src={USFlag} width={20} height={20} alt="us" />
-                  English
+          <div className={`container ${style.header__menus__wrapper}`}>
+            <ul className={style.header__menus__links}>
+              {links?.map((link, index) => (
+                <li key={index}>
+                  <Link href={link?.pathname} className={pathname == link?.pathname ? style.header__menus__links__active : null}>{link?.title_en}</Link>
                 </li>
-                <li>
+              ))}
+            </ul>
+            <div className={style.header__menus__info}>
+              <a href="tel:+12025550178">
+                <FontAwesomeIcon icon={faPhoneVolume} />
+                +1-202-555-0178
+              </a>
+              <div className={style.header__menus__langs}>
+                <p>
                   <Image src={USFlag} width={20} height={20} alt="us" />
-                  Uzbek
-                </li>
-              </ul>
+                  English <FontAwesomeIcon icon={faChevronDown} />
+                </p>
+                <ul>
+                  <li>
+                    <Image src={USFlag} width={20} height={20} alt="us" />
+                    English
+                  </li>
+                  <li>
+                    <Image src={USFlag} width={20} height={20} alt="us" />
+                    Uzbek
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-        <div className={style.header__searchbar}>
-            This is searchbar
-        </div>
+        <div className={style.header__searchbar}>This is searchbar</div>
       </div>
     </div>
   );

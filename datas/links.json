@@ -1,0 +1,38 @@
+[
+  {
+    "id": 0,
+    "title_en": "Home",
+    "title_uz": "Bosh sahifa",
+    "pathname": "/"
+  },
+  {
+    "id": 1,
+    "title_en": "Find job",
+    "title_uz": "Qidirish",
+    "pathname": "/search"
+  },
+  {
+    "id": 2,
+    "title_en": "Employers",
+    "title_uz": "Ish beruvchilar",
+    "pathname": "/employers"
+  },
+  {
+    "id": 3,
+    "title_en": "Candidates",
+    "title_uz": "Kandidatlar",
+    "pathname": "/candidates"
+  },
+  {
+    "id": 4,
+    "title_en": "Pricing plans",
+    "title_uz": "Narxlar",
+    "pathname": "/pricing"
+  },
+  {
+    "id": 5,
+    "title_en": "Customer supports",
+    "title_uz": "Qo'llab quvvatlash",
+    "pathname": "/support"
+  }
+]
