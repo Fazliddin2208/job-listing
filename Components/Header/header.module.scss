@@ -76,4 +76,27 @@
             }
         }
     }
+
+    &__searchbar{
+        padding: 20px 0;
+        display: flex;
+
+        &__action{
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            &__sign{
+                background-color: #fff;
+                color: $main-color;
+                border: 1px solid #CEE0F5;
+            }
+            &__post{
+                background-color: $main-color;
+                color: #fff;
+                border: 1px solid $main-color;
+            }
+        }
+    }
 }
