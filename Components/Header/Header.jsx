@@ -8,79 +8,53 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import USFlag from "@/public/images/usaflag.svg";
-import Logo from "@/public/images/logo.svg";
+
 import { usePathname } from "next/navigation";
 import links from "@/datas/links.json";
+import Searchbar from "./Searchbar";
 
 export default function Header() {
   const pathname = usePathname();
 
   return (
-    <div className={style.wrapper}>
-      <div className={style.header}>
-        <div className={style.header__menus}>
-          <div className={`container ${style.header__menus__wrapper}`}>
-            <ul className={style.header__menus__links}>
-              {links?.map((link, index) => (
-                <li key={index}>
-                  <Link
-                    href={link?.pathname}
-                    className={
-                      pathname == link?.pathname
-                        ? style.header__menus__links__active
-                        : null
-                    }
-                  >
-                    {link?.title_en}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            <div className={style.header__menus__info}>
-              <a href="tel:+12025550178">
-                <FontAwesomeIcon icon={faPhoneVolume} />
-                +1-202-555-0178
-              </a>
-              <div className={style.header__menus__langs}>
-                <p>
-                  <Image src={USFlag} width={20} height={20} alt="us" />
-                  English <FontAwesomeIcon icon={faChevronDown} />
-                </p>
-                <ul>
-                  <li>
-                    <Image src={USFlag} width={20} height={20} alt="us" />
-                    English
-                  </li>
-                  <li>
-                    <Image src={USFlag} width={20} height={20} alt="us" />
-                    Uzbek
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className={`container ${style.header__searchbar}`}>
-          <h2>
-            <Image src={Logo} width={100} height={100} alt="logo" />
-            Jobpilot{" "}
-          </h2>
-          <div className={style.header__searchbar__filter}>
-            <div className={style.header__searchbar__filter__country}>
-              <p>
+    <div className={style.header__menus}>
+      <div className={`container ${style.header__menus__wrapper}`}>
+        <ul className={style.header__menus__links}>
+          {links?.map((link, index) => (
+            <li key={index}>
+              <Link
+                href={link?.pathname}
+                className={
+                  pathname == link?.pathname
+                    ? style.header__menus__links__active
+                    : null
+                }
+              >
+                {link?.title_en}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <div className={style.header__menus__info}>
+          <a href="tel:+12025550178">
+            <FontAwesomeIcon icon={faPhoneVolume} />
+            +1-202-555-0178
+          </a>
+          <div className={style.header__menus__langs}>
+            <p>
+              <Image src={USFlag} width={20} height={20} alt="us" />
+              English <FontAwesomeIcon icon={faChevronDown} />
+            </p>
+            <ul>
+              <li>
                 <Image src={USFlag} width={20} height={20} alt="us" />
-                USA <FontAwesomeIcon icon={faChevronDown} />
-              </p>
-              <ul>
-                <li>England</li>
-                <li>Uzbekistan</li>
-              </ul>
-              <input type="search" placeholder="Job title, keyword, comnpany" />
-            </div>
-          </div>
-          <div className={style.header__searchbar__action}>
-            <button className={style.header__searchbar__action__sign}>Sign in</button>
-            <button className={style.header__searchbar__action__post}>Post a job</button>
+                English
+              </li>
+              <li>
+                <Image src={USFlag} width={20} height={20} alt="us" />
+                Uzbek
+              </li>
+            </ul>
           </div>
         </div>
       </div>
