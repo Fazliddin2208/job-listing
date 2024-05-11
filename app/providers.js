@@ -1,6 +1,6 @@
 "use client";
 
-import Header from "@/Components/Header/Header";
+import HeaderWrapper from "@/Components/Header/Wrapper";
 import { initializeStore } from "@/redux/configureStore";
 import React from "react";
 import { Provider } from "react-redux";
@@ -11,7 +11,7 @@ export default function Providers({ children }) {
   return (
     <Provider store={store}>
       <PersistGate persistor={persistor}>
-        <Header />
+        <HeaderWrapper />
         {children}
         </PersistGate>
     </Provider>
