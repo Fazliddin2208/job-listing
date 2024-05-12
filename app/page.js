@@ -1,3 +1,4 @@
+import HeroComponent from "@/Components/Hero/HeroComponent";
 import Main from "@/Components/Main";
 import axios from "axios";
 
@@ -23,6 +24,7 @@ export default async function Home() {
   const podcasts = await getPodcasts();
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <HeroComponent />
       <Main podcasts={podcasts} />
     </main>
   );

@@ -1,14 +1,14 @@
 import React from "react";
-import Header from "./Header";
-import Searchbar from "./Searchbar";
+import HeaderComponent from "./HeaderComponent";
+import SearchbarComponent from "./SearchbarComponent";
 import style from "./header.module.scss";
 
 export default function HeaderWrapper() {
   return (
     <div className={style.wrapper}>
       <div className={style.header}>
-        <Header />
-        <Searchbar />
+        <HeaderComponent />
+        <SearchbarComponent />
       </div>
     </div>
   );
