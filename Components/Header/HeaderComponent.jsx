@@ -11,7 +11,7 @@ import USFlag from "@/public/images/usaflag.svg";
 
 import { usePathname } from "next/navigation";
 import links from "@/datas/links.json";
-import Searchbar from "./Searchbar";
+import Searchbar from "./SearchbarComponent";
 
 export default function Header() {
   const pathname = usePathname();
