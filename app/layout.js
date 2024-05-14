@@ -3,6 +3,7 @@ import Providers from "./providers";
 import { Suspense } from "react";
 import Loading from "./loading";
 import '@/style/style.scss'
+import { ChakraProvider } from "@chakra-ui/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Suspense fallback={<Loading />}>
-          <Providers>{children}</Providers>
+          <Providers>
+            <ChakraProvider>
+              {children}
+            </ChakraProvider>
+            </Providers>
         </Suspense>
       </body>
     </html>
