@@ -42,8 +42,10 @@ export default function Searchbar() {
           }
           variant="unstyled"
         >
-          <option value="option1">Option 1</option>
-          <option value="option2">Option 2</option>
+          <option value="eng">England</option>
+          <option value="uzb">Uzbekistan</option>
+          <option value="usa">USA</option>
+          <option value="ind">India</option>
         </Select>
         <InputGroup style={{ alignItems: "center", paddingLeft: "20px", borderLeft: '1px solid #E4E5E8' }}>
           <InputLeftElement pointerEvents="none" style={{ top: "auto", left: 15 }}>
