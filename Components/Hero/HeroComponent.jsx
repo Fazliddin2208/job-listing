@@ -10,7 +10,7 @@ export default function HeroComponent() {
         <div className={`container ${style.hero}`}>
             <Flex alignContent={'center'} className={style.hero__infos}>
                 <div className={style.hero__infos__main}>
-                    <Text color='blue.400' fontSize="50px">Find a job that suits your interest & skills.</Text>
+                    <Text fontSize="50px">Find a job that suits your interest & skills.</Text>
                     <p>Aliquam vitae turpis in diam convallis finibus in at risus. Nullam in scelerisque leo, eget sollicitudin velit bestibulum.</p>
                 </div>
                 <div className={style.hero__infos__pic}>
