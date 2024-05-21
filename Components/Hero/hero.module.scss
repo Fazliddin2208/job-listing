@@ -3,4 +3,24 @@
 .wrapper{
     background-color: $bg-gray;
     min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    padding: 70px 0;
+
+    .hero{
+        border: 1px solid red;
+
+        &__infos{
+            // display: grid;
+            grid-template-columns: 55% 38%;
+            gap: 7%;
+            border: 1px solid red;
+
+            &__pic{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
