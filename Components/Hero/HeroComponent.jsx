@@ -2,7 +2,7 @@ import React from "react";
 import style from "./hero.module.scss";
 import Image from "next/image";
 import HeroImg from "@/public/images/heroimg.svg";
-import { Flex, Grid, Input, InputGroup, InputLeftElement, Text } from "@chakra-ui/react";
+import { Grid, Input, InputGroup, InputLeftElement, Text } from "@chakra-ui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
@@ -24,11 +24,11 @@ export default function HeroComponent() {
               Aliquam vitae turpis in diam convallis finibus in at risus. Nullam
               in scelerisque leo, eget sollicitudin velit bestibulum.
             </Text>
-            <Flex border={'1px solid'}>
+            <Grid alignItems={"center"} border={'1px solid'}>
               <InputGroup
                 style={{
                   alignItems: "center",
-                  paddingLeft: "20px",
+                //   paddingLeft: "20px",
                 //   borderLeft: "1px solid #E4E5E8",
                 }}
               >
@@ -43,7 +43,7 @@ export default function HeroComponent() {
               <InputGroup
                 style={{
                   alignItems: "center",
-                  paddingLeft: "20px",
+                //   paddingLeft: "20px",
                 //   borderLeft: "1px solid #E4E5E8",
                 }}
               >
@@ -56,7 +56,7 @@ export default function HeroComponent() {
                 <Input type="tel" placeholder="Job title, keyword, company" />
               </InputGroup>
               <button className="btn-primary">Find Job</button>
-            </Flex>
+            </Grid>
           </div>
           <div className={style.hero__infos__pic}>
             <Image src={HeroImg} alt="hero" width={300} height={300} />
