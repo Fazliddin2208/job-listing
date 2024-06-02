@@ -34,7 +34,7 @@ export default function HeroComponent() {
               >
                 <InputLeftElement
                   pointerEvents="none"
-                  style={{ top: "auto", left: 10 }}
+                  style={{ top: "auto", left: 15 }}
                 >
                   <FontAwesomeIcon icon={faSearch} color="#0066FF" />
                 </InputLeftElement>
