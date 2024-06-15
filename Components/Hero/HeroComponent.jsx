@@ -29,7 +29,7 @@ export default function HeroComponent() {
                 style={{
                   alignItems: "center",
                 //   paddingLeft: "20px",
-                //   borderLeft: "1px solid #E4E5E8",
+                  borderLeft: "1px solid #E4E5E8",
                 }}
               >
                 <InputLeftElement
