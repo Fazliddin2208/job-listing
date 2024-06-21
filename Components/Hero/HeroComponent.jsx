@@ -24,12 +24,10 @@ export default function HeroComponent() {
               Aliquam vitae turpis in diam convallis finibus in at risus. Nullam
               in scelerisque leo, eget sollicitudin velit bestibulum.
             </Text>
-            <Grid alignItems={"center"} border={'1px solid'}>
+            <Grid alignItems={"center"} >
               <InputGroup
                 style={{
                   alignItems: "center",
-                //   paddingLeft: "20px",
-                  // borderLeft: "1px solid #E4E5E8",
                 }}
               >
                 <InputLeftElement
