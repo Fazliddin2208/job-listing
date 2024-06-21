@@ -38,19 +38,6 @@ export default function HeroComponent() {
                 </InputLeftElement>
                 <Input type="tel" placeholder="Job title, keyword, company" />
               </InputGroup>
-              {/* <InputGroup
-                style={{
-                  alignItems: "center",
-                }}
-              >
-                <InputLeftElement
-                  pointerEvents="none"
-                  style={{ top: "auto", left: 15 }}
-                >
-                  <FontAwesomeIcon icon={faSearch} color="#0066FF" />
-                </InputLeftElement>
-                <Input type="tel" placeholder="Job title, keyword, company" />
-              </InputGroup> */}
               <button className="btn-primary">Find Job</button>
             </Grid>
           </div>
