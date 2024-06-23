@@ -18,7 +18,7 @@ export default function HeroComponent() {
               fontWeight={600}
               width={"70%"}
             >
-              Find a job that suits your interest & skills
+              Find a job that suits your interest & skills.
             </Text>
             <Text width={"70%"} margin={"20px 0"}>
               Aliquam vitae turpis in diam convallis finibus in at risus. Nullam
