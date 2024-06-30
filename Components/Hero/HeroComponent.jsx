@@ -22,7 +22,7 @@ export default function HeroComponent() {
             </Text>
             <Text width={"70%"} margin={"20px 0"}>
               Aliquam vitae turpis in diam convallis finibus in at risus. Nullam
-              in scelerisque leo, eget sollicitudin velit bestibulum.
+              in scelerisque leo, eget sollicitudin velit 
             </Text>
             <Grid alignItems={"center"} >
               <InputGroup
