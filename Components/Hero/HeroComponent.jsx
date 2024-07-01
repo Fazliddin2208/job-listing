@@ -2,7 +2,13 @@ import React from "react";
 import style from "./hero.module.scss";
 import Image from "next/image";
 import HeroImg from "@/public/images/heroimg.svg";
-import { Grid, Input, InputGroup, InputLeftElement, Text } from "@chakra-ui/react";
+import {
+  Grid,
+  Input,
+  InputGroup,
+  InputLeftElement,
+  Text,
+} from "@chakra-ui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
@@ -22,9 +28,13 @@ export default function HeroComponent() {
             </Text>
             <Text width={"70%"} margin={"20px 0"}>
               Aliquam vitae turpis in diam convallis finibus in at risus. Nullam
-              in scelerisque leo, eget sollicitudin velit 
+              in scelerisque leo, eget sollicitudin velit
             </Text>
-            <Grid alignItems={"center"} >
+            <Grid alignItems={"center"} gridTemplateColumns={'40% 40% 20%'} gap={'5px'} style={{
+              background: '#fff',
+              padding: 10,
+              borderRadius: 10
+            }} className={style.hero__infos__inputGroup}>
               <InputGroup
                 style={{
                   alignItems: "center",
@@ -32,13 +42,32 @@ export default function HeroComponent() {
               >
                 <InputLeftElement
                   pointerEvents="none"
-                  style={{ top: "auto", left: 15 }}
+                  style={{ top: "auto", left: 5 }}
                 >
                   <FontAwesomeIcon icon={faSearch} color="#0066FF" />
                 </InputLeftElement>
-                <Input type="tel" placeholder="Job title, keyword, company" />
+                <Input type="tel" placeholder="Job title, keyword, company"  />
               </InputGroup>
-              <button className="btn-primary">Find Job</button>
+              <InputGroup
+                style={{
+                  alignItems: "center",
+                }}
+              >
+                <InputLeftElement
+                  pointerEvents="none"
+                  style={{ top: "auto", left: 5 }}
+                >
+                  <FontAwesomeIcon icon={faSearch} color="#0066FF" />
+                </InputLeftElement>
+                <Input type="tel" placeholder="Your location" style={{
+                  paddingLeft: 45,
+                  border: 'none',
+                  outline: "none"
+                }} />
+              </InputGroup>
+              <button className="btn-primary" style={{
+                padding: '10px 20px !important'
+              }}>Find Job</button>
             </Grid>
           </div>
           <div className={style.hero__infos__pic}>

@@ -3,10 +3,8 @@ import style from "./header.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import Logo from "@/public/images/logo.svg";
-import USFlag from "@/public/images/usaflag.svg";
 import Image from "next/image";
 import {
-  Icon,
   Input,
   InputGroup,
   InputLeftElement,
@@ -56,10 +54,10 @@ export default function Searchbar() {
         {/* <input type="search" placeholder="Job title, keyword, comnpany" /> */}
       </div>
       <div className={style.header__searchbar__action}>
-        <button className={style.header__searchbar__action__sign}>
+        <button className={style.header__searchbar__action__sign} style={{padding: '12px 24px'}}>
           Sign in
         </button>
-        <button className={style.header__searchbar__action__post}>
+        <button className={style.header__searchbar__action__post} style={{padding: '12px 24px'}}>
           Post a job
         </button>
       </div>

@@ -1,24 +1,35 @@
-@import '../../style/globals.scss';
+@import "../../style/globals.scss";
 
-.wrapper{
-    background-color: $bg-gray;
-    min-height: 80vh;
-    display: flex;
-    justify-content: center;
-    padding: 70px 0;
+.wrapper {
+  background-color: $bg-gray;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  padding: 70px 0;
 
-    .hero{
+  .hero {
+    &__infos {
+      // display: grid;
+      grid-template-columns: 55% 38%;
+      gap: 7%;
 
-        &__infos{
-            // display: grid;
-            grid-template-columns: 55% 38%;
-            gap: 7%;
-
-            &__pic{
-                img{
-                    width: 100%;
-                }
-            }
+      &__pic {
+        img {
+          width: 100%;
         }
+      }
+
+      &__inputGroup {
+        border: 1px solid red;
+
+        input {
+          width: 100%;
+          border: none;
+          outline: none;
+          padding-left: 20px;
+          padding-right: 10px;
+        }
+      }
     }
+  }
 }
