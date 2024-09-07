@@ -28,7 +28,7 @@ export default function HeroComponent() {
             </Text>
             <Text width={"70%"} margin={"20px 0"}>
               Aliquam vitae turpis in diam convallis finibus in at risus. Nullam
-              in scelerisque leo, eget sollicitudin velit
+              in scelerisque leo, eget sollicitudin 
             </Text>
             <Grid alignItems={"center"} gridTemplateColumns={'40% 40% 20%'} gap={'5px'} style={{
               background: '#fff',
@@ -66,7 +66,7 @@ export default function HeroComponent() {
                 }} />
               </InputGroup>
               <button className="btn-primary" style={{
-                padding: '10px 20px !important'
+                padding: '10px 20px'
               }}>Find Job</button>
             </Grid>
           </div>
