@@ -8,7 +8,7 @@ export default function NotFound() {
         <img src="https://i.postimg.cc/2yrFyxKv/giphy.gif" alt="gif_ing" />
       </div>
       <div className={style.content}>
-        <h1 className={style.mainHeading}>Ooops! This page is gone.</h1>
+        <h1 className={style.mainHeading}>This page is gone.</h1>
         <p>
           ...maybe the page you're looking for is not found or never existed.
         </p>
