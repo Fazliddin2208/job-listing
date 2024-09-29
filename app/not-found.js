@@ -10,7 +10,7 @@ export default function NotFound() {
       <div className={style.content}>
         <h1 className={style.mainHeading}>Ooops! This page is gone.</h1>
         <p>
-          ...maybe the page you're looking for is not found or never existed.
+          Maybe the page you're looking for is not found or never existed.
         </p>
         <Link href="/">
           <button>
