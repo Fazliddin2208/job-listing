@@ -30,7 +30,7 @@ export default function HeroComponent() {
               Aliquam vitae turpis in diam convallis finibus in at risus. Nullam
               in scelerisque leo, eget sollicitudin 
             </Text>
-            <Grid alignItems={"center"} gridTemplateColumns={'40% 40% 20%'} gap={'5px'} style={{
+            <Grid alignItems={"center"} gridTemplateColumns={'40% 40% 20%'} gap={'0px'} style={{
               background: '#fff',
               padding: 10,
               borderRadius: 10
