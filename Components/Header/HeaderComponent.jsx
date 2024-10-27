@@ -38,7 +38,7 @@ export default function Header() {
         <div className={style.header__menus__info}>
           <a href="tel:+12025550178">
             <FontAwesomeIcon icon={faPhoneVolume} />
-            +1-202-555-0178
+            +998901234567
           </a>
           <div className={style.header__menus__langs}>
             <p>
