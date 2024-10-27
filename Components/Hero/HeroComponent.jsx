@@ -67,7 +67,7 @@ export default function HeroComponent() {
               </InputGroup>
               <button className="btn-primary" style={{
                 padding: '10px 20px'
-              }}>Find Job</button>
+              }}>Find a Job</button>
             </Grid>
           </div>
           <div className={style.hero__infos__pic}>
