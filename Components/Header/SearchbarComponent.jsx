@@ -51,7 +51,6 @@ export default function Searchbar() {
           </InputLeftElement>
           <Input type="tel" placeholder="Job title, keyword, company" />
         </InputGroup>
-        {/* <input type="search" placeholder="Job title, keyword, comnpany" /> */}
       </div>
       <div className={style.header__searchbar__action}>
         <button className={style.header__searchbar__action__sign} style={{padding: '12px 24px'}}>
